@@ -2,6 +2,7 @@
 import unittest
 import baseball_game as bg
 from io import StringIO
+from mock import patch,MagicMock
 
 
 class TestBaseballGame(unittest.TestCase):
