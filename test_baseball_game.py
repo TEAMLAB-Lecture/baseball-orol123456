@@ -1,10 +1,8 @@
 # -*- coding: utf8 -*-
-
 import unittest
 import baseball_game as bg
-
-from mock import patch
 from io import StringIO
+from mock import patch,MagicMock
 
 
 class TestBaseballGame(unittest.TestCase):
@@ -231,3 +229,6 @@ class TestBaseballGame(unittest.TestCase):
                     ball += 1
         result = [strikes, ball]
         return result
+
+if __name__=='__main__':
+    unittest.main()
